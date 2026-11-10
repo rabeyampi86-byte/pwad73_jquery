@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio assumenda. Possimus ipsa enim, earum, nam maxime quisquam libero consectetur dicta maiores eligendi consequatur doloremque rerum ab repellendus temporibus cupiditate voluptates? Quis suscipit, recusandae nulla dolor quisquam delectus doloribus expedita! Consequuntur voluptatem commodi consectetur quisquam perferendis tenetur nisi ea quas delectus illo reiciendis laboriosam ipsum, iure incidunt quia sit modi quis nam, culpa expedita repudiandae! Voluptas reiciendis placeat omnis excepturi nihil ratione praesentium autem veritatis qui, quae possimus totam laudantium illum enim commodi iure, id, exercitationem atque corrupti natus velit libero! Corporis eaque itaque, nemo rem accusamus eligendi debitis repellendus.</p>
+    <button class="btn1">Hide All</button>
+    <button class="btn2">Show All</button>
+    <button class="btn3">Hide/Show</button>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("p").hide();
+            });
+            $(".btn2").click(function(){
+                $("p").show();
+            });
+            $(".btn3").click(function(){
+                $("p").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

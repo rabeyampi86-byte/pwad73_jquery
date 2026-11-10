@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <button class="btn1">FadeIn</button>
+    <button class="btn2">FadeOut</button>
+    <button class="btn3">FadeIN/Out</button>
+    <div class="box1" 
+    style=
+    "width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    display: none;
+    "></div>
+    
+    <script>
+        jQuery(function(){
+            $(".btn1").click(function(){
+                $(".box1").fadeIn(500);
+            });
+            $(".btn2").click(function(){
+                $(".box1").fadeOut("slow");
+            });
+            $(".btn3").click(function(){
+                $(".box1").fadeToggle();
+            });
+        });
+    </script>
+</body>
+</html>

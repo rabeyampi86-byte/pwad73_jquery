@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+</head>
+<body>
+    <h1>This is heading</h1>
+    <div id="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officiis, enim excepturi <br>
+        delectus placeat quisquam facere vero vel earum nam. Fuga, ullam unde. Aliquid quae mollitia ex, <br>
+         voluptates illum alias.
+    </div>
+    <button class="btn1">Red</button>
+    <button class="btn2">Green</button>
+    <!-- jQuery -->
+     <script>
+        $(document).ready(function () {
+            //alert("I am ready");
+            let x = $("h1").text();
+            let y = $("#box1").text();
+            //alert(y);
+            $(".btn1").click( function(){
+                $("#box1").css("backgroundColor", "red")
+            }
+                
+            );
+            $(".btn2").click(function () {
+                $("#box1").css("backgroundColor", "green");
+            });
+        });
+     </script>
+</body>
+</html>
